@@ -54,3 +54,4 @@ if __name__ == '__main__':
     eigs, eigv = np.linalg.eig(mat)
     prec_freq = eigs[np.where(np.abs(eigs) > 1e-10)[0]]
     print('Jupiter & Saturn Precession Frequency is:', 2 * np.pi / prec_freq)
+    print('Mode amplitudes:', eigv)
